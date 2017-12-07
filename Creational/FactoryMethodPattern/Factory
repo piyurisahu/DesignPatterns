@@ -1,0 +1,25 @@
+<?php
+namespace factorMethodPattern;
+
+abstract  class Factory{
+    abstract function factoryMethod(string $name): Document ;
+}
+
+class ConcreateFactory extends Factory
+{
+    function factoryMethod(string $name): Document
+    {
+        if($name == 'html')
+        {
+            return new HtmlDocument();
+        }
+        if($name == 'text')
+        {
+            return new TextDocument();
+        }
+        if($name == 'pdf')
+        {
+            return new PdfDocument();
+        }
+    }
+}

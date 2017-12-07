@@ -1,11 +1,14 @@
 <?php
+
+use PHPUnit\Framework\TestCase;
+
 /**
  * Created by PhpStorm.
  * User: piyurisahu
  * Date: 04/09/17
  * Time: 2:07 PM
  */
-class TestStrategyDesignPattern extends \PHPUnit\Framework\TestCase
+class TestStrategyDesignPattern
 {
     function  testAdd()
     {
